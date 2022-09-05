@@ -1,0 +1,66 @@
+.choosesBonus {
+  height: 300px;
+  width: 335px;
+  margin: auto;
+  top: 60%;
+  position: relative;
+  transform: translateY(-50%);
+  background: url(../Images/bg-pentagon.svg);
+  background-size: contain;
+  background-position: center;
+}
+
+.choosesBonus > div {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.choosesBonus > div:hover,
+.choosesBonus > div:hover .img {
+  box-shadow: inset #00000026 0px 0px 0px 0px;
+}
+
+.choosesBonus .img {
+  width: 110px;
+  height: 110px;
+  background: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: inset #00000026 0px 6px 2px 0px;
+  transition: 0.3s;
+}
+
+.choosesBonus .rock {
+  bottom: 0;
+  left: 100%;
+  transform: translate(-100%, 50%);
+}
+.choosesBonus .paper {
+  top: calc(100% / 3);
+  right: 0%;
+  transform: translate(50%, -50%);
+}
+.choosesBonus .scissors {
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.choosesBonus .lizard {
+  left: 0%;
+  bottom: 0%;
+  transform: translate(0%, 50%);
+}
+
+.choosesBonus .spock {
+  left: 0%;
+  top: calc(100% / 3);
+  transform: translate(-50%, -50%);
+}

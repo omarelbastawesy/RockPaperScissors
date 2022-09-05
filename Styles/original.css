@@ -1,0 +1,55 @@
+.choosesOriginal {
+  height: 200px;
+  width: 235px;
+  margin: auto;
+  top: 60%;
+  position: relative;
+  transform: translateY(-50%);
+  background: url(../Images/bg-triangle.svg);
+  background-size: contain;
+  background-position: center;
+}
+
+.choosesOriginal > div {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.choosesOriginal > div:hover,
+.choosesOriginal > div:hover .img {
+  box-shadow: inset #00000026 0px 0px 0px 0px;
+}
+
+.choosesOriginal .img {
+  width: 120px;
+  height: 120px;
+  background: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: inset #00000026 0px 8px 2px 0px;
+  transition: 0.3s;
+}
+
+.choosesOriginal .rock {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.choosesOriginal .paper {
+  top: 0;
+  right: 100%;
+  transform: translate(50%, -50%);
+}
+.choosesOriginal .scissors {
+  left: 100%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+}
